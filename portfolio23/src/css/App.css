@@ -2,10 +2,14 @@
   /* text-align: center; */
   background-image: url("../../public/assets/aotr-background.png");
   background-repeat: no-repeat;
+  display: flex;
 }
 
 .App-nav {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .App-body {
@@ -18,10 +22,7 @@
   align-items: center;
   /* justify-content: center; */
   background-color: rgba(255, 255, 255, .3);
-}
-
-.App-content {
-  opacity: 1;
+  z-index: 2;
 }
 
 .App-link {
