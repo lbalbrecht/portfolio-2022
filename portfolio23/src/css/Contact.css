@@ -1,0 +1,19 @@
+.contactMe{
+    margin-top: -300px;
+}
+
+.contactMe {
+    text-align: center;
+}
+
+#socialLinks {
+    display: flex;
+    justify-content: center;
+}
+
+#socialLinks a {
+    font-size: 100px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}

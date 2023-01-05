@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <div className="App">
-        <BrowserRouter>
+        <BrowserRouter basename='/portfolio-2023'>
           <div className='App-nav'>
             <Navbar />
           </div>

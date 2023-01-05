@@ -1,6 +1,7 @@
 {
   "name": "portfolio23",
   "version": "0.1.0",
+  "homepage": "https://lbalbrecht.github.io/portfolio-2023/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,6 +52,7 @@
   "devDependencies": {
     "@jridgewell/sourcemap-codec": "^1.4.14",
     "@rollup/plugin-terser": "^0.2.1",
-    "@types/reactstrap": "^8.7.2"
+    "@types/reactstrap": "^8.7.2",
+    "gh-pages": "^4.0.0"
   }
 }
