@@ -11,6 +11,7 @@
   top: 0;
   right: 0;
   padding-right: 10px;
+  z-index: 2;
 }
 
 .App-body {
@@ -23,7 +24,7 @@
   align-items: center;
   padding-top: 10px;
   background-color: rgba(0, 0, 0, .45);
-  color: lightgray;
+  color: rgb(208, 214, 226);
 }
 
 .App-content {
