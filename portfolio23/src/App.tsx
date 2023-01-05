@@ -14,7 +14,7 @@ function App() {
           <Navbar />
         </div>
         <div className="App-body">
-          <div className="App-content">
+          <div className="App-title">
             <h1>Design by Leighton</h1>
           </div>
           <Routes>
