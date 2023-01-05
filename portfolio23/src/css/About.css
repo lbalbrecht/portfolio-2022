@@ -1,0 +1,62 @@
+.aboutMe p {
+    font-size:x-large;
+    font-weight: 600;
+}
+
+#title h1{
+    text-align: center;
+}
+
+#blockOne {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#blockOne img {
+    margin-right: 20px;
+}
+
+#blockTwo {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#blockTwo .text h1 {
+    text-align: center;
+}
+
+#blockTwo img {
+    margin-left: 20px;
+}
+
+#blockThree {
+    display: flex;
+}
+
+#blockThree img {
+    margin-right: 20px;
+}
+
+#blockThree .text h1 {
+    text-align: center;
+}
+
+#blockThree .text span {
+    text-align: center;
+    font-weight:bolder;
+}
+
+@media only screen and (max-width: 768px) {
+    #blockOne img {
+        display: none;
+    }
+    
+    #blockTwo img {
+        display: none;
+    }
+
+    #blockThree img {
+        display: none;
+    }
+  }
+

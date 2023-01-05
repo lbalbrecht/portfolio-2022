@@ -8,23 +8,23 @@ export default function Navbar() {
     const currentPage = window.location.pathname
 
     function home() {
-        if (currentPage != '/') {
+        if (currentPage !== '/') {
             navigate('/')
-            window.location.reload()
+            // window.location.reload()
         }
     }
 
     function about() {
-        if (currentPage != '/about') {
+        if (currentPage !== '/about') {
             navigate('/about')
-            window.location.reload()
+            // window.location.reload()
         }
     }
 
     function contact() {
-        if (currentPage != '/contact') {
+        if (currentPage !== '/contact') {
             navigate('/contact')
-            window.location.reload()
+            // window.location.reload()
         }
     }
 

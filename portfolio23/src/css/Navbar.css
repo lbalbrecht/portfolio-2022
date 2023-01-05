@@ -11,10 +11,6 @@
     color: white;
 }
 
-.navIcon:visited {
-    color: white;
-}
-
 .navText {
     color: white;
     font-size: larger;
@@ -28,6 +24,8 @@
 #navbar:hover #navLinks {
     display: block;
     color: white;
+    animation-name: fade-in;
+    animation-duration: 250ms;
 }
 
 .navText:hover {
@@ -35,14 +33,24 @@
     background-color: rgba(255, 255, 255, .3);
 }
 
+@keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fade-out {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
 @media only screen and (max-width: 768px) {
     .navIcon {
-        color: black;
+        /* color: black; */
         margin-top: 0px;
         margin-right: 0px;
     }
 
-    .navIcon:hover {
+    /* .navIcon:hover {
         color: gray;
     }
 
@@ -53,5 +61,5 @@
     .navText:hover {
         color: black;
         background-color: rgba(255, 255, 255, .3);
-    }
+    } */
 }
