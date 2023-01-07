@@ -1,6 +1,8 @@
 import { Fade } from '@mui/material'
-import { Row, Col, Card, CardTitle, CardBody, CardText, ListGroup, ListGroupItem, Button, CardFooter, CardLink } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
 import '../css/Portfolio.css'
+import MPCard from "./MPCard"
+import OPCard from "./OPCard"
 
 export default function Portfolio() {
     return (
@@ -10,208 +12,36 @@ export default function Portfolio() {
                 <h2>A selection of web applications I have developed or supported in developing</h2>
                 <Row>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                        </Card>
+                        <MPCard title={ "Social Media Site" } description={ "A social media site that implements a tagging system" } technologies = { "Java 8, PostgreSQL, Spring Boot, ReactJS"}/>
                     </Col>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                        </Card>
+                        <MPCard title={ "Social Media Site" } description={ "A social media site that implements a tagging system" } technologies = { "Java 8, PostgreSQL, Spring Boot, ReactJS"}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                        </Card>
+                        <MPCard title={ "Social Media Site" } description={ "A social media site that implements a tagging system" } technologies = { "Java 8, PostgreSQL, Spring Boot, ReactJS"}/>
                     </Col>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                        </Card>
+                        <MPCard title={ "Social Media Site" } description={ "A social media site that implements a tagging system" } technologies = { "Java 8, PostgreSQL, Spring Boot, ReactJS"}/>
                     </Col>
                 </Row>
                 <h1 className="projectSection2">Bootcamp projects</h1>
                 <h2>A selection of early projects to demonstrate my progress as a developer</h2>
                 <Row>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                            <CardFooter className="projectCardFooter">
-                                <p>This project has been updated, you can see the updated version <CardLink href="#">here</CardLink></p>
-                            </CardFooter>
-                        </Card>
+                        <OPCard title={ "Weather App" } description={ "A weather app utilizing JQuery" } technologies = { "HTML, CSS, Javascript, JQuery"} url = {"https://lbalbrecht.github.io/lba-weather-dashboard/"} isUpdated = {true}/>
                     </Col>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                            <CardFooter className="projectCardFooter">
-                                <p>This project has been updated, you can see the updated version <CardLink href="#">here</CardLink></p>
-                            </CardFooter>
-                        </Card>
+                        <OPCard title={ "Weather App" } description={ "A weather app utilizing JQuery" } technologies = { "HTML, CSS, Javascript, JQuery"} url = {"https://lbalbrecht.github.io/lba-weather-dashboard/"} isUpdated = {false}/>
                     </Col>
                 </Row>
                 <Row>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                            <CardFooter className="projectCardFooter">
-                                <p>This project has been updated, you can see the updated version <CardLink href="#">here</CardLink></p>
-                            </CardFooter>
-                        </Card>
+                        <OPCard title={ "Weather App" } description={ "A weather app utilizing JQuery" } technologies = { "HTML, CSS, Javascript, JQuery"} url = {"https://lbalbrecht.github.io/lba-weather-dashboard/"} isUpdated = {false}/>
                     </Col>
                     <Col lg="6" sm="12">
-                        <Card className="projectCard">
-                            <img src="https://via.placeholder.com/480x270" alt="Placeholder" />
-                            <CardBody className="projectCardBody">
-                                <CardTitle tag="h5">
-                                    Project Title
-                                </CardTitle>
-                                <CardText>
-                                    A description of the project
-                                </CardText>
-                            </CardBody>
-                            <ListGroup className="projectCardList">
-                                <ListGroupItem className="projectCardListItem">
-                                    Technologies
-                                </ListGroupItem>
-                            </ListGroup>
-                            <CardBody className="projectCardBody">
-                                <Button>
-                                    Check it out
-                                </Button>
-                            </CardBody>
-                            <CardFooter className="projectCardFooter">
-                                <p>This project has been updated, you can see the updated version <CardLink href="#">here</CardLink></p>
-                            </CardFooter>
-                        </Card>
+                        <OPCard title={ "Weather App" } description={ "A weather app utilizing JQuery" } technologies = { "HTML, CSS, Javascript, JQuery"} url = {"https://lbalbrecht.github.io/lba-weather-dashboard/"} isUpdated = {true}/>
                     </Col>
                 </Row>
             </div>
