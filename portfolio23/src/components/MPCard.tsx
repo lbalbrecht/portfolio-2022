@@ -20,14 +20,12 @@ export default function MPCard({imgsrc = "https://via.placeholder.com/480x270", 
                 <CardText>
                     {description}
                 </CardText>
-            </CardBody>
             <ListGroup className="projectCardList">
                 <ListGroupItem className="projectCardListItem">
                     {technologies}
                 </ListGroupItem>
             </ListGroup>
-            <CardBody className="projectCardBody">
-                <a href={url} target="_blank" rel="noreferrer">
+                <a href={url} target="_blank" rel="noreferrer" id="cardLink">
                     <Button>Check it out</Button>
                 </a>
             </CardBody>
